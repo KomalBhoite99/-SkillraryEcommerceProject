@@ -9,15 +9,15 @@ public class SkillraryDemoLoginPage
 {
 	//declaration
 	//address of course
-	@FindBy(id = "course")
+	@FindBy(id="course")
 	private WebElement coursetab;
 	
 	//address of selenium training
-	@FindBy(xpath= "(//a[text() ='Selenium Training'])[1]")
+	@FindBy(xpath="(//a[text()='Selenium Training']) [1]")
 	private WebElement seleniumtraining;
 	
 	//address of dropdown
-	@FindBy(name = "addresstype")
+	@FindBy(name ="addresstype")
 	private WebElement coursedd;
 	
 	//initialization

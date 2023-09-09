@@ -13,7 +13,7 @@ public class AddToCartPage
 	private WebElement addbtn;
 	
 	//address of add to cart button
-	@FindBy(xpath = "//button[text()='Add to Cart']")
+	@FindBy(xpath = "//button[text()=' Add to Cart'] ")
 	private WebElement cartbtn;
 	
 	//initialization
