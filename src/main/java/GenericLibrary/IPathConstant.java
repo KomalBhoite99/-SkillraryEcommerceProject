@@ -1,9 +1,8 @@
 package GenericLibrary;
 
-public interface IPathConstant
+public interface IPathConstant 
 {
-
-	String photoPath = ".\\photo";
-	String propertyfilepath= ".\\src\\test\\resources\\Data.properties";
+	String photoPath=".\\photo";
+	String propertyfilepath=".\\src\\test\\resources\\Data.properties";
 
 }

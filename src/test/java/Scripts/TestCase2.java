@@ -1,25 +1,25 @@
 package Scripts;
-
 import org.testng.annotations.Test;
-import PomPages.SkillraryDemoLoginPage;
 import PomPages.SkillraryLoginPage;
-import PomPages.TestingPage;
+import PomPages.SkillraryDemoLoginPage;
+import PomPages.AddtoCartPage;
+import PomPages.TestingcatogaryPage;
 import GenericLibrary.BaseClass;
-
-public class TestCase2 extends BaseClass
-{
+public class TestCase2 extends BaseClass {
 	@Test
 	public void tc2() throws Throwable
 	{
-		SkillraryLoginPage s  = new SkillraryLoginPage(driver);
-		s.gearsbutton();
+		SkillraryLoginPage s=new SkillraryLoginPage(driver);
+		s.greasbutton();
 		s.skillrarydemoapplication();
-		
-		SkillraryDemoLoginPage  sd = new SkillraryDemoLoginPage (driver);
 		utilies.switchingtabs(driver);
-		utilies.dropDown(sd.getCoursedd(), pdata.getPropertydata("coursedd"));
-		TestingPage tp = new TestingPage(driver);
-		utilies.dragdrop(driver, tp.getSeleniumtraining(),tp.getCarttab());
+		SkillraryDemoLoginPage sd=new SkillraryDemoLoginPage(driver);
 		
+	
+		utilies.dropDown(sd.getCoursedd(),pdata.getPropertydata("courseadd"));
+		Thread.sleep(2000);
+		TestingcatogaryPage t=new TestingcatogaryPage(driver);
+		utilies.dragAnddrop(driver, t.getSeleniumtraining(), t.getCarttab());
 	}
+
 }
